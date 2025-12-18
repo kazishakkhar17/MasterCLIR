@@ -2,6 +2,8 @@
 Cross-Lingual Information Retrieval System (Meta Diners)
 
 ## File Structure
+
+```
 MASTERCLIR/
 ├── 📂 Active Files
 │   ├── {} bangla_articles_with_ner.json          U
@@ -20,3 +22,4 @@ MASTERCLIR/
 │   └── 📄 simple_index.pkl                        U
 │
 └── 📄 README.md
+```
