@@ -5,21 +5,42 @@ Cross-Lingual Information Retrieval System (Meta Diners)
 
 ```
 MASTERCLIR/
-├── 📂 Active Files
-│   ├── {} bangla_articles_with_ner.json          U
-│   ├── {} english_articles_with_ner.json         U
-│   └── 📄 simple_index.pkl                        U
 │
-├── 📂 Module A
-│   ├── {} bangla_articles_with_ner.json          U
-│   ├── {} bangla_articles.json
-│   ├── {} english_articles_with_ner.json         U
-│   ├── {} english_articles.json
-│   ├── 📓 ModuleA_NER.ipynb                       U
-│   ├── 📄 Readme.md                               U
-│   ├── 📓 scrap+crawl.ipynb
-│   ├── 🐍 scrapper.py
-│   └── 📄 simple_index.pkl                        U
+├── Active Files/
+│   ├── bangla_articles_with_ner.json
+│   ├── doc_embeddings.pkl
+│   ├── english_articles_with_ner.json
+│   ├── entity_mapper.json
+│   ├── model_comparison.csv
+│   ├── Module_B_QueryProcessing.ipynb
+│   ├── ModuleC.ipynb
+│   ├── retrieval_system.pkl.txt
+│   └── simple_index.pkl
 │
-└── 📄 README.md
+├── Module A/
+│   ├── bangla_articles_with_ner.json
+│   ├── bangla_articles.json
+│   ├── english_articles_with_ner.json
+│   ├── english_articles.json
+│   ├── ModuleA_NER.ipynb
+│   ├── Readme.md
+│   ├── scrap+crawl.ipynb
+│   ├── scrapper.py
+│   └── simple_index.pkl
+│
+├── Module B/
+│   ├── entity_mapper.json
+│   ├── ModuleB.ipynb
+│   └── Readme.md
+│
+├── Module C/
+│   ├── doc_embeddings.pkl
+│   ├── model_comparison.csv
+│   ├── ModuleC.ipynb
+│   └── retrieval_system.pkl.txt
+│
+├── Notebooks/
+│
+└── README.md
+
 ```
