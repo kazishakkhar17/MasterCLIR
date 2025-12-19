@@ -1,6 +1,6 @@
-query,bm25_top1,semantic_top1,hybrid_top1
-cricket in Bangladesh,Shakib receives Argentina cricket team’s gift for Bangladesh,হ্যান্ডবলে চ্যাম্পিয়ন বিজিবি,Shakib receives Argentina cricket team’s gift for Bangladesh
-নির্বাচন,ডিসিসি নির্বাচন-জটিলতা,গাজীপুর সিটি নির্বাচন,গাজীপুর সিটি নির্বাচন
-university education,"Young University Rankings 2024: NSU first, BRACU second in Bangladesh",৬০ বছরে রাজশাহী বিশ্ববিদ্যালয়,"Young University Rankings 2024: NSU first, BRACU second in Bangladesh"
-ভারত পাকিস্তান,আফ্রিদির ফেরা,ভারতে পড়ার সুযোগ দিতে শিক্ষা সম্মেলন,ভারতে পড়ার সুযোগ দিতে শিক্ষা সম্মেলন
-health policy,"Time for govt to improve health care, fix trust gap",পুষ্টি নিরাপত্তায় সারা বছর পর্যাপ্ত খাদ্য দরকার,পুষ্টি নিরাপত্তায় সারা বছর পর্যাপ্ত খাদ্য দরকার
+query,bm25_top1,fuzzy_top1,semantic_top1,hybrid_top1
+cricket in Bangladesh,Shakib receives Argentina cricket team’s gift for Bangladesh,"BKSP, BWSF sign MoU to train girls",হ্যান্ডবলে চ্যাম্পিয়ন বিজিবি,Shakib receives Argentina cricket team’s gift for Bangladesh
+নির্বাচন,ডিসিসি নির্বাচন-জটিলতা,বিচারিক বিবেচনার বাইরে গিয়ে দেওয়া কিছু জামিন মানুষের জীবন বিপন্ন করছে: আসিফ নজরুল,গাজীপুর সিটি নির্বাচন,গাজীপুর সিটি নির্বাচন
+university education,"Young University Rankings 2024: NSU first, BRACU second in Bangladesh","BUFT, NBA sign MoU to boost education, professional growth",৬০ বছরে রাজশাহী বিশ্ববিদ্যালয়,"Young University Rankings 2024: NSU first, BRACU second in Bangladesh"
+ভারত পাকিস্তান,আফ্রিদির ফেরা,বিচারিক বিবেচনার বাইরে গিয়ে দেওয়া কিছু জামিন মানুষের জীবন বিপন্ন করছে: আসিফ নজরুল,ভারতে পড়ার সুযোগ দিতে শিক্ষা সম্মেলন,ভারতে পড়ার সুযোগ দিতে শিক্ষা সম্মেলন
+health policy,"Time for govt to improve health care, fix trust gap","UN adopts historic declaration integrating NCDs, mental health for first time",পুষ্টি নিরাপত্তায় সারা বছর পর্যাপ্ত খাদ্য দরকার,পুষ্টি নিরাপত্তায় সারা বছর পর্যাপ্ত খাদ্য দরকার
