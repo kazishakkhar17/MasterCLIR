@@ -1,0 +1,9 @@
+streamlit
+torch
+torchvision
+sentence-transformers
+transformers
+faiss-cpu
+numpy
+pandas
+pillow 

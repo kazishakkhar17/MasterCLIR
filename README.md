@@ -1,5 +1,5 @@
 # MasterCLIR
-Cross-Lingual Information Retrieval System (Meta Diners)
+Cross-Lingual Information Retrieval System (Meta Diners).
 
 ## File Structure
 
