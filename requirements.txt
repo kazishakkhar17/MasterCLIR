@@ -6,4 +6,4 @@ transformers
 faiss-cpu
 numpy
 pandas
-pillow
+pillow 
