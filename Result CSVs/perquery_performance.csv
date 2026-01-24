@@ -1,0 +1,61 @@
+Query,Model,Precision@10,Recall@50,nDCG@10,MRR
+surveillance state awami league,BM25,0.1,1.0,0.6309297535714575,0.5
+surveillance state awami league,Fuzzy,0.1,1.0,1.0,1.0
+surveillance state awami league,Semantic,0.0,0.0,0.0,0.0
+surveillance state awami league,Hybrid,0.1,1.0,0.6309297535714575,0.5
+July uprising victims bodies,BM25,0.1,1.0,1.0,1.0
+July uprising victims bodies,Fuzzy,0.0,0.0,0.0,0.0
+July uprising victims bodies,Semantic,0.0,1.0,0.0,0.029411764705882353
+July uprising victims bodies,Hybrid,0.1,1.0,0.3333333333333333,0.14285714285714285
+Jucsu election vote counting,BM25,0.1,1.0,1.0,1.0
+Jucsu election vote counting,Fuzzy,0.1,1.0,1.0,1.0
+Jucsu election vote counting,Semantic,0.1,1.0,0.6309297535714575,0.5
+Jucsu election vote counting,Hybrid,0.1,1.0,1.0,1.0
+punishment for students involved in violence,BM25,0.1,1.0,0.5,0.3333333333333333
+punishment for students involved in violence,Fuzzy,0.1,1.0,1.0,1.0
+punishment for students involved in violence,Semantic,0.0,1.0,0.0,0.041666666666666664
+punishment for students involved in violence,Hybrid,0.1,1.0,0.6309297535714575,0.5
+Nepal Gen Z protests causes,BM25,0.1,1.0,1.0,1.0
+Nepal Gen Z protests causes,Fuzzy,0.1,1.0,1.0,1.0
+Nepal Gen Z protests causes,Semantic,0.1,1.0,1.0,1.0
+Nepal Gen Z protests causes,Hybrid,0.1,1.0,1.0,1.0
+reinstated candidates Rucsu polls,BM25,0.1,1.0,1.0,1.0
+reinstated candidates Rucsu polls,Fuzzy,0.1,1.0,1.0,1.0
+reinstated candidates Rucsu polls,Semantic,0.1,1.0,1.0,1.0
+reinstated candidates Rucsu polls,Hybrid,0.1,1.0,1.0,1.0
+Jucsu election vote rigging allegations,BM25,0.1,1.0,1.0,1.0
+Jucsu election vote rigging allegations,Fuzzy,0.1,1.0,1.0,1.0
+Jucsu election vote rigging allegations,Semantic,0.1,1.0,0.43067655807339306,0.25
+Jucsu election vote rigging allegations,Hybrid,0.1,1.0,1.0,1.0
+illegal bus stands Old Dhaka,BM25,0.1,1.0,1.0,1.0
+illegal bus stands Old Dhaka,Fuzzy,0.1,1.0,1.0,1.0
+illegal bus stands Old Dhaka,Semantic,0.1,1.0,0.5,0.3333333333333333
+illegal bus stands Old Dhaka,Hybrid,0.1,1.0,1.0,1.0
+Bangladesh football team Nepal safety,BM25,0.1,1.0,1.0,1.0
+Bangladesh football team Nepal safety,Fuzzy,0.1,1.0,1.0,1.0
+Bangladesh football team Nepal safety,Semantic,0.1,1.0,0.6309297535714575,0.5
+Bangladesh football team Nepal safety,Hybrid,0.1,1.0,1.0,1.0
+Rucsu candidate list cancellation,BM25,0.1,1.0,0.6309297535714575,0.5
+Rucsu candidate list cancellation,Fuzzy,0.1,1.0,0.31546487678572877,0.125
+Rucsu candidate list cancellation,Semantic,0.1,1.0,1.0,1.0
+Rucsu candidate list cancellation,Hybrid,0.1,1.0,1.0,1.0
+DU law professor denied bail,BM25,0.1,1.0,1.0,1.0
+DU law professor denied bail,Fuzzy,0.1,1.0,1.0,1.0
+DU law professor denied bail,Semantic,0.1,1.0,1.0,1.0
+DU law professor denied bail,Hybrid,0.1,1.0,1.0,1.0
+US-Bangla airlines crash compensation verdict,BM25,0.1,1.0,1.0,1.0
+US-Bangla airlines crash compensation verdict,Fuzzy,0.1,1.0,1.0,1.0
+US-Bangla airlines crash compensation verdict,Semantic,0.1,1.0,1.0,1.0
+US-Bangla airlines crash compensation verdict,Hybrid,0.1,1.0,1.0,1.0
+tidal surge warning coastal districts,BM25,0.1,1.0,1.0,1.0
+tidal surge warning coastal districts,Fuzzy,0.1,1.0,1.0,1.0
+tidal surge warning coastal districts,Semantic,0.1,1.0,1.0,1.0
+tidal surge warning coastal districts,Hybrid,0.1,1.0,1.0,1.0
+blood donation for jet crash victims,BM25,0.1,1.0,0.6309297535714575,0.5
+blood donation for jet crash victims,Fuzzy,0.1,1.0,1.0,1.0
+blood donation for jet crash victims,Semantic,0.1,1.0,1.0,1.0
+blood donation for jet crash victims,Hybrid,0.1,1.0,1.0,1.0
+Nurul Huda confession 2018 election,BM25,0.1,1.0,1.0,1.0
+Nurul Huda confession 2018 election,Fuzzy,0.1,1.0,1.0,1.0
+Nurul Huda confession 2018 election,Semantic,0.1,1.0,1.0,1.0
+Nurul Huda confession 2018 election,Hybrid,0.1,1.0,1.0,1.0
