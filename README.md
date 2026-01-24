@@ -1,4 +1,3 @@
-````md
 # Cross-Lingual Information Retrieval (CLIR) System  
 **Bangla–English News Retrieval**
 
@@ -42,9 +41,9 @@ Each component operates independently, and their outputs are fused at the rankin
 
 ## 🔍 Model 1: BM25 Retriever (Lexical Search)
 
-- Library: `rank-bm25`
-- Retrieval Type: Sparse vector / keyword-based
-- Scoring: Term Frequency–Inverse Document Frequency (TF–IDF)
+- **Library:** `rank-bm25`
+- **Retrieval Type:** Sparse vector / keyword-based
+- **Scoring:** Term Frequency–Inverse Document Frequency (TF–IDF)
 
 ### Role in the System
 - Ensures high precision for queries with exact keyword overlap
@@ -57,10 +56,10 @@ Each component operates independently, and their outputs are fused at the rankin
 
 ## ✏️ Model 2: Fuzzy Retriever (String Similarity)
 
-- Libraries:
+- **Libraries:**
   - `fuzzywuzzy`
   - `python-Levenshtein`
-- Similarity Metric: `token_set_ratio`
+- **Similarity Metric:** `token_set_ratio`
 
 ### Role in the System
 - Handles spelling errors, transliteration issues, and morphological variants
@@ -73,10 +72,10 @@ Raw fuzzy scores are normalized to the range **[0,1]** before fusion.
 
 ## 🧠 Model 3: Semantic Retriever (Neural)
 
-- Model: **LaBSE (Language-Agnostic BERT Sentence Embedding)**
-- Library: `sentence-transformers`
-- Similarity Metric: Cosine similarity
-- Framework: PyTorch
+- **Model:** LaBSE (Language-Agnostic BERT Sentence Embedding)
+- **Library:** `sentence-transformers`
+- **Similarity Metric:** Cosine similarity
+- **Framework:** PyTorch
 
 ### Key Design Choices
 - Documents are encoded as dense vectors using LaBSE
@@ -103,11 +102,9 @@ The Hybrid Ranker is the **core innovation layer** of the system.
 
 ### Score Normalization
 
-Min–max normalization is applied independently to each model’s output to ensure scale invariance:
+Min–max normalization is applied independently to each model's output to ensure scale invariance:
 
-```math
-s_{norm} = \frac{s - s_{min}}{s_{max} - s_{min}}
-````
+$$s_{norm} = \frac{s - s_{min}}{s_{max} - s_{min}}$$
 
 If all scores from a retriever are identical, normalized scores are set to 1.0 to avoid division-by-zero artifacts.
 
@@ -117,30 +114,26 @@ If all scores from a retriever are identical, normalized scores are set to 1.0 t
 
 The final hybrid relevance score is computed using a weighted linear combination:
 
-```math
-s_{hybrid} = 0.3 \cdot s_{BM25}
-           + 0.2 \cdot s_{fuzzy}
-           + 0.5 \cdot s_{semantic}
-```
+$$s_{hybrid} = 0.3 \cdot s_{BM25} + 0.2 \cdot s_{fuzzy} + 0.5 \cdot s_{semantic}$$
 
 #### Design Rationale
 
-* **Semantic weight (0.5):** Anchors ranking on conceptual meaning, essential for cross-lingual retrieval
-* **BM25 weight (0.3):** Preserves lexical precision and exact-entity matching
-* **Fuzzy weight (0.2):** Adds robustness against spelling and morphological noise
+- **Semantic weight (0.5):** Anchors ranking on conceptual meaning, essential for cross-lingual retrieval
+- **BM25 weight (0.3):** Preserves lexical precision and exact-entity matching
+- **Fuzzy weight (0.2):** Adds robustness against spelling and morphological noise
 
-Documents missing from any retriever’s output are assigned a normalized score of zero for that component.
+Documents missing from any retriever's output are assigned a normalized score of zero for that component.
 
 ---
 
 ## 🔄 End-to-End Retrieval Flow
 
 1. User submits a query (Bangla or English)
-2. BM25, Fuzzy, and Semantic retrievers independently fetch top-*N* candidates
+2. BM25, Fuzzy, and Semantic retrievers independently fetch top-N candidates
 3. Raw scores are normalized to a common [0,1] scale
 4. Results are merged by unique document URLs
 5. Hybrid score is computed using weighted fusion
-6. Documents are ranked and top-*k* results are returned
+6. Documents are ranked and top-k results are returned
 
 ---
 
@@ -148,26 +141,26 @@ Documents missing from any retriever’s output are assigned a normalized score 
 
 ### Data Acquisition & Parsing
 
-* `requests`
-* `BeautifulSoup (bs4)`
+- `requests`
+- `BeautifulSoup (bs4)`
 
 ### NLP & Retrieval
 
-* `spacy` (English NLP processing)
-* `re` (Regex-based Bangla preprocessing)
-* `rank-bm25`
-* `fuzzywuzzy`
-* `python-Levenshtein`
-* `sentence-transformers`
-* `torch`
+- `spacy` (English NLP processing)
+- `re` (Regex-based Bangla preprocessing)
+- `rank-bm25`
+- `fuzzywuzzy`
+- `python-Levenshtein`
+- `sentence-transformers`
+- `torch`
 
 ### Translation
 
-* `googletrans`
+- `googletrans`
 
 ### System Utilities
 
-* `pickle` (model and embedding serialization)
+- `pickle` (model and embedding serialization)
 
 ---
 
@@ -177,31 +170,24 @@ A planned extension involves integrating **cross-lingual topic modeling** into t
 
 ### Concept
 
-* Learn shared latent topics across Bangla and English documents using multilingual embeddings
-* Represent both queries and documents as topic distributions
-* Introduce topic relevance as an additional normalized ranking signal
+- Learn shared latent topics across Bangla and English documents using multilingual embeddings
+- Represent both queries and documents as topic distributions
+- Introduce topic relevance as an additional normalized ranking signal
 
 ### Expected Benefits
 
-* Improved recall for abstract or low-overlap queries
-* Reduced dependency on surface-level lexical matching
-* Greater robustness against semantic drift across languages
+- Improved recall for abstract or low-overlap queries
+- Reduced dependency on surface-level lexical matching
+- Greater robustness against semantic drift across languages
 
 ---
 
 ## 📄 References
 
-* McCarley, J. S., *Should We Translate the Documents or the Queries?*, ACL, 1999
-* Feng et al., *Language-agnostic BERT Sentence Embedding*, ACL, 2022
-* Robertson et al., *Okapi at TREC-3*, NIST, 1995
+- McCarley, J. S., *Should We Translate the Documents or the Queries?*, ACL, 1999
+- Feng et al., *Language-agnostic BERT Sentence Embedding*, ACL, 2022
+- Robertson et al., *Okapi at TREC-3*, NIST, 1995
 
 ---
 
-
-Project: *Cross-Lingual Information Retrieval : MasterCLIR*
-
-```
-```
-
-
-```
+**Project:** *Cross-Lingual Information Retrieval : MasterCLIR*
